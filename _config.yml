@@ -1,0 +1,62 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Remember me
+email: duconggpdg@gmail.com
+author: Du Chi Cong
+description: >- # this means to ignore newlines until "baseurl:"
+  Mục tiêu của dự án xây dựng một blog phục vụ cho việc ghi chép như cuốn sổ tay cá nhân công khai những thông tin bổ ích của tôi trong hành trình học hỏi và tìm hiểu về Frontend.
+  Những thông tin này, có thể không được viết một cách mạch lạc.
+  Nếu bạn đọc muốn đóng góp, xin vui lòng liên hệ theo email của tôi. Để giúp bạn đọc có góc nhìn đúng đắn hơn về tài liệu.
+baseurl: "" # the subpath of your site, e.g. /blog
+permalink: none # /:categories/:title/
+url: "https://duchicong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+facebook_username: duchicong
+github_username: duchicong
+my_resume_name: Resume project
+
+# New fields not defaulted by jekyll-new with the minima theme
+# Add a copyright. A copyright symbol and yar will be added automatically
+copyright: 'Website designed by Du Chi Cong'
+
+# Build settings
+# theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
