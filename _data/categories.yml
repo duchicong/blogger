@@ -1,0 +1,29 @@
+- title: Amazon Web Services
+  url: /aws.html
+  src: 'img/icons/aws.svg'
+  class: 'bg-white'
+
+- title: Regex
+  url: /regex.html
+  src: 'img/icons/regex.svg'
+  class: 'bg-white'
+
+- title: CSS
+  url: /css.html
+  src: 'img/icons/css.svg'
+  class: 'bg-blue'
+
+- title: JavaScript
+  url: /javascript.html
+  src: 'img/icons/javascript.svg'
+  class: 'bg-golden'
+
+- title: Data Structure and Algorithms
+  url: /dsa.html
+  src: 'img/icons/data-structure.svg'
+  class: 'bg-white'
+
+- title: Jekyll
+  url: /jekyll.html
+  src: 'img/icons/jekyll.svg'
+  class: 'bg-white'

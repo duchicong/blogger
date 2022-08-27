@@ -1,0 +1,45 @@
+<!-- Blog HTML -->
+<section id="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+
+        {% for post in site.posts %}
+        <!-- Blog Post -->
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+        <p class="lead">by {{ post.author }}</p>
+        <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: "%B %d, %Y" }}</p>
+        {% if page.image %}
+        <img src="{{ post.image }}" alt="{{ post.title }}" class="img-responsive">
+        <hr>
+        {% endif %}
+
+        {{ post.excerpt }}
+
+        <a class="btn btn-primary" href="{{ post.url }}">Read More <span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+        <hr>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Call to action Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>We design delightful digital experiences.</h2>
+          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve
+            achieved for other clients, and meet our highly experienced Team who just love to design.</p>
+          <a class="btn btn-default btn-call-to-action" href="#">Tell Us Your Story</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

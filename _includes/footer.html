@@ -1,0 +1,44 @@
+<footer>
+  <div class="footer-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <div class="footer-manu">
+            <a class="cover-image-small" href="/index.html">
+              <img src="img/item-img1.jpg" alt="me">
+            </a>
+            <div class="slogan">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, fugit nemo
+            </div>
+            {% if site.description %}
+            <div class="description-me text-justify">
+              {{ site.description }}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <ul class="social-icons">
+            <li>
+              <a class="fa fa-facebook" href="https://facebook.com/duchicong"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/duchicong"><i class="fa fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://duchicong.github.io/resume"><i class="fa fa-pinterest"></i></a>
+            </li>
+            <li>
+              <a href="https://zalo...xxx"><i class="fa fa-zalo"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if site.copyright %}
+  <div class="copyright">
+    <p class="text-center">{{ site.copyright }}</p>
+  </div>
+  {% endif %}
+</footer>

@@ -1,29 +1,34 @@
 <!-- header Nav Start -->
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">
-        <img src="img/logo.png" alt="Logo">
-      </a>
-    </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li {% if page.url == "/index.html" %} class="active" {% endif %}><a href="index.html">Home</a></li>
-          <li {% if page.url == "/about-us.html" %} class="active" {% endif %}><a href="about-us.html">About us</a></li>
-          <li {% if page.url == "/blog.html" %} class="active" {% endif %}><a href="blog.html">Blog</a></li>
-          <li {% if page.url == "/post.html" %} class="active" {% endif %}><a href="post.html">Post</a></li>
-          <li {% if page.url == "/portfolio.html" %} class="active" {% endif %}><a href="portfolio.html">Portfolio</a></li>
-          <li {% if page.url == "/contact.html" %} class="active" {% endif %}><a href="contact.html">Contact</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">Brand</a>
+  <button class="navbar-toggler btn btn-outline-warning" type="button" onclick="toggleNavbarHeader()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarToggler">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item {% if page.url == '/' %}active{% endif %}"><a class="nav-link"
+          href="/">Home</a></li>
+      <li class="nav-item {% if page.url == '/about-us.html' %}active{% endif %}"><a class="nav-link"
+        href="about-us.html">About us</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" onclick="javascript:void(0);">
+          Categories
+        </a>
+        <div class="dropdown-menu">
+          {% for category in site.data.categories %}
+          <a href="{{ category.url }}" alt="{{ category.title }}" class="nav-item-link {% if page.url == category.url %}active{% endif %}">
+            {{ category.title }}
+          </a>
+          {% endfor %}
+        </div>
+      </li>
+      <li class="nav-item {% if page.url == '/contact.html' %}active{% endif %}"><a class="nav-link"
+        href="contact.html">Contact</a></li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>

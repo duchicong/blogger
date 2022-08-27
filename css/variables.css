@@ -1,0 +1,19 @@
+:root {
+  /* colors */
+  --color-charleston: #2B2B2B;
+  --color-anti-flash-white: #F1F1F1;
+  --color-white: #FFF;
+  --color-yellow: yellow;
+  --color-golden: #FFD600;
+  --color-blue: #2196F3;
+  --color-black: #000;
+  --color-gray: #333;
+
+  /* breakpoint */
+  /* Extra small devices (portrait phones, less than 576px) */
+  /* No media query since this is the default in Bootstrap */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}

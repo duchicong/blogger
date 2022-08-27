@@ -1,0 +1,17 @@
+<div class="latest-posts-wrapper">
+  <div class="section-title text-center text-light">
+    <h2>Các chủ đề mới nhất</h2>
+    <p>Các bài đăng gần đây, theo từng danh mục</p>
+  </div>
+  <div class="the-posts">
+    <div class="row">
+      {% for post in site.posts limit:12 %}
+      <div class="col-12 col-sm-6 col-lg-4">
+        <h3>{{ post.title }}</h3>
+        <p class="category">category: {{ post.categories }}</p>
+        <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

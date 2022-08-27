@@ -21,6 +21,7 @@
 title: Remember me
 email: duconggpdg@gmail.com
 author: Du Chi Cong
+image: "img/item-img1.jpg"
 description: >- # this means to ignore newlines until "baseurl:"
   Mục tiêu của dự án xây dựng một blog phục vụ cho việc ghi chép như cuốn sổ tay cá nhân công khai những thông tin bổ ích của tôi trong hành trình học hỏi và tìm hiểu về Frontend.
   Những thông tin này, có thể không được viết một cách mạch lạc.
@@ -40,6 +41,15 @@ copyright: 'Website designed by Du Chi Cong'
 # theme: minima
 plugins:
   - jekyll-feed
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previous `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      author: "CongDC"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
