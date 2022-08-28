@@ -20,6 +20,36 @@
   row-gap: 1rem;
 }
 
+.fa-small {
+  font-size: 1.3rem !important;
+}
+
+.cover-image-tiny {
+  width: 2rem;
+  height: auto;
+}
+
+.cover-image-small {
+  width: 5rem;
+  height: auto;
+}
+.image-circle {
+  border-radius: 50%;
+}
+
+.text-italic {
+  font-style: italic !important;
+}
+
+.post-category, .post-date {
+  border-radius: 0.3rem;
+  background-color: rgba(0,0,0,0.2);
+  box-shadow: inset 0 1px 10px rgb(0 0 0 / 30%), 0 1px 0 rgb(255 255 255 / 10%), 0 -1px 0 rgb(0 0 0 / 50%);
+  padding: 0.2rem 0.5rem;
+  margin-right: 2.5px;
+  font-size: .8rem;
+}
+
 header.header {
   background-color: var(--color-charleston);
 }
@@ -81,12 +111,62 @@ footer .footer-content {
   color: var(--color-white);
   padding: 2rem 0px 1rem;
 }
-footer .copyright {
-  background-color: var(--color-charleston);
-  color: var(--color-white)
+footer .footer-cover__image {
+  float: left;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
 }
 
-footer .copyright > p {
+footer .description-me {
+  font-size: .9rem;
+}
+
+footer .social-icons {
+  max-width: 10rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 1rem auto;
+  align-items: center;
+}
+footer .social-icons a.social-icon-item {
+  height: 2.3rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.6rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
+  color: var(--color-white);
+  transition: border-radius .3s;
+}
+footer .social-icons a.social-icon-item:hover, footer .social-icons a.social-icon-item:focus {
+  text-decoration: none;
+  opacity: .6;
+  border-radius: 50%;
+}
+footer .fa-bg-facebook {
+  background-color: #3d5998;
+}
+footer .fa-bg-file-code-o {
+  background-color: #c4475f;
+}
+footer .fa-bg-github {
+  background-color: var(--color-black);
+}
+footer .fa-bg-envelope {
+  background-color: #df574b;
+}
+
+footer #copyright {
+  background-color: var(--color-charleston);
+  color: var(--color-white);
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+}
+
+footer #copyright > p {
   margin-bottom: 0;
   font-size: .8rem;
 }
@@ -173,5 +253,12 @@ section#description-to-me .contact-me {
 }
 
 /*******************************************/
-/*               POSTS LATEST              */
+/*               LATEST POSTS              */
 /*******************************************/
+section#latest-posts .post-item {
+  margin-bottom: 1.2rem;
+}
+section#latest-posts .post-title {
+  font-size: 1.2rem;
+  margin-bottom: 0rem;
+}
