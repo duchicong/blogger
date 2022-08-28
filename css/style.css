@@ -16,6 +16,10 @@
   background-color: var(--color-blue);
 }
 
+.bg-ts {
+  background-color: #007acc7a;
+}
+
 .row-gap-1 {
   row-gap: 1rem;
 }
@@ -185,7 +189,8 @@ footer #copyright > p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 56px);
+  height: auto;
+  padding: 3rem 0rem;
 }
 
 #categories-block .category-item {
@@ -292,4 +297,38 @@ section#latest-posts .post-title {
 #about-page .about-author {
   text-shadow: 1px 0px 1px;
   margin-top: 1rem;
+}
+
+/*******************************************/
+/*             CATEGORY PAGE               */
+/*******************************************/
+/* .category-layout .category-banner-dsa {
+  background-color: #4aa0de;
+} */
+.category-dsa .category-banner {
+  background-color: #4aa0de;
+}
+.category-layout .category-banner-top {
+  max-height: 16rem;
+  width: 100%;
+}
+.category-layout .category-body {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.category-layout .post-item {
+  margin: .5rem 0;
+}
+.category-layout .post-title {
+  list-style: decimal;
+}
+.category-layout .card-body {
+  padding: .5rem;
+}
+.category-layout .post-info {
+  justify-content: space-between;
+}
+.category-layout .info-date {
+  font-size: .8rem;
+  text-decoration: underline;
 }

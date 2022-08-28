@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+{% assign category_name = page.url | replace: '/', '' | split: ".html" | first %}
+{% assign category = site.data.config_data_category[category_name] %}
+
+<div class="category-layout {{ category.class }}">
+  <div class="container">
+    {% if category.banner %}
+    <div class="category-banner text-center">
+      <img class="category-banner-top" src="{{ category.banner }}" alt="{{ category.title }}">
+    </div>
+    {% endif %}
+    {% if category.title %}
+    <div class="category-title text-center mt-2">
+      <h2><b>{{ category.title }}</b></h2>
+    </div>
+    {% endif %}
+    {% if category.excerpt %}
+    <p class="category-excerpt">{{ category.excerpt }}</p>
+    {% endif %}
+    <div class="container">
+      <div class="category-wrapper">
+        <div class="category-body">
+          <div class="the-posts">
+            {% for post in site.categories[category_name] reversed %}
+            <div class="card post-item">
+              <div class="card-body">
+                <h5 class="card-title post-title m-0"><a class="text-dark" href="{{ post.url }}"><b>{{ post.title
+                      }}</b></a></h5>
+                {% if post.lead %}<p class="card-text">{{ post.lead }}</p>{% endif %}
+                <div class="d-flex post-info">
+                  <a href="{{ post.url }}" class="text-link">Xem chi tiết</a>
+                  <span class="info-date">{{ post.date | date: "%d/%m/%Y" }}</span>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -35,4 +35,8 @@
   #about-page .cover-image-small {
     width: 10rem;
   }
+
+  .category-layout .category-banner-top {
+    width: auto;
+  }
 }

@@ -1,0 +1,43 @@
+dsa:
+  name: dsa
+  banner: /img/banners/dsa.png
+  permalink: /dsa.html
+  class: "category-dsa"
+  excerpt: ""
+  
+css:
+  name: css
+  title: Cascading Style Sheets
+  permalink: /css.html
+  excerpt: "Bạn có thể hiểu đơn giản rằng, nếu HTML đóng vai trò định dạng các phần tử trên website như việc tạo ra các đoạn văn bản, các tiêu đề,
+  bảng,…thì CSS sẽ giúp chúng ta có thể thêm style vào các phần tử HTML đó như đổi bố cục, màu sắc trang, đổi màu chữ, font chữ, thay đổi cấu trúc…"
+
+javascript:
+  name: javascript
+  title: Javascript
+  permalink: /javascript.html
+  excerpt: "Javascript là một ngôn ngữ vô cùng phổ biến trong lĩnh vực lập trình ngày nay.
+  Có thể nói rằng, Javascript hay còn gọi là JS là ngôn ngữ rất thông dụng …"
+
+typescript:
+  name: typescript
+  title: Typescript
+  permalink: /typescript.html
+  excerpt: "TypeScript là một ngôn ngữ lập trình được phát triển và duy trì bởi Microsoft.
+  Nó là một tập hợp siêu cú pháp nghiêm ngặt của JavaScript và thêm tính năng kiểu tĩnh tùy chọn vào ngôn ngữ…"
+
+css:
+  name: regex
+  title: Cascading Style Sheets
+  permalink: /regex.html
+  excerpt: "Regex là các mẫu (pattern) thay vì các chuỗi cụ thể được sử dụng tìm/thay thế (Find/Replace).
+  Là một công cụ cực mạnh cho xử lí chuỗi trong Php, javascript…"
+
+jekyll:
+  name: jekyll
+  title: Jekyll
+  permalink: /jekyll.html
+  excerpt: "Jekyll là một công cụ giúp phát sinh trang web \"tĩnh\", nghĩa là từ một cấu trúc các file (js, css, image ...), dữ liệu do bạn định nghĩa,
+  thiết lập Jekyll sẽ tổng hợp lại và phát sinh ra các trang html - như là một website tĩnh…"
+
+
