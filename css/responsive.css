@@ -25,4 +25,14 @@
   section#description-to-me .section-content {
     text-align: left;
   }
+
+  /*******************************************/
+  /*                ABOUT PAGE               */
+  /*******************************************/
+  #about-page .about-image__content {
+    height: 80vh;
+  }
+  #about-page .cover-image-small {
+    width: 10rem;
+  }
 }
