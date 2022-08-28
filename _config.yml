@@ -18,14 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Remember me
+title: My Notebook
 email: duconggpdg@gmail.com
 author: Du Chi Cong
 image: "img/item-img1.jpg"
 description: >- # this means to ignore newlines until "baseurl:"
-  Mục tiêu của dự án xây dựng một blog phục vụ cho việc ghi chép như cuốn sổ tay cá nhân công khai những thông tin bổ ích của tôi trong hành trình học hỏi và tìm hiểu về Frontend.
-  Những thông tin này, có thể không được viết một cách mạch lạc.
-  Nếu bạn đọc muốn đóng góp, xin vui lòng liên hệ theo email của tôi. Để giúp bạn đọc có góc nhìn đúng đắn hơn về tài liệu.
+  Mình đã và đang làm việc tại Hà Nội được 3 năm. 
+  Mình thích làm frontend, thường thì viết lách, hợp lý hơn là viết lại những gì mình biết.
+  Ngoài ra, mình còn lưu lại các tips, tricks trong quá trình làm việc.
+  Nếu nội dung chưa ổn bạn đọc vui lòng gửi vào email giúp mình!
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: none # /:categories/:title/
 url: "https://duchicong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
