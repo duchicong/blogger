@@ -7,7 +7,6 @@ date: 2021-01-13 22:16:06 +0700
 # - dsa
 # - blogs
 category: dsa
-image: http://placehold.it/900x300
 lead: "Đây là bài viết dành cho bất kỳ ai có thể học thuật toán và tự hỏi mức độ ảnh hưởng của việc thúc đẩy sự nghiệp / kỹ năng lập trình của họ. Nó cũng dành cho những người thắc mắc tại sao các công ty lớn như: Google, Facebook và Amazon..."
 author: CongDC
 ---

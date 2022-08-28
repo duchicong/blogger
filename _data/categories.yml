@@ -18,6 +18,11 @@
   src: 'img/icons/javascript.svg'
   class: 'bg-golden'
 
+- title: TypeScript
+  url: /typescript.html
+  src: 'img/icons/typescript.svg'
+  class: 'bg-ts'
+
 - title: Data Structure and Algorithms
   url: /dsa.html
   src: 'img/icons/data-structure.svg'
