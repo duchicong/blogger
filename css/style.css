@@ -149,7 +149,7 @@ footer .social-icons a.social-icon-item:hover, footer .social-icons a.social-ico
 footer .fa-bg-facebook {
   background-color: #3d5998;
 }
-footer .fa-bg-file-code-o {
+footer .fa-bg-info-circle {
   background-color: #c4475f;
 }
 footer .fa-bg-github {
@@ -261,4 +261,35 @@ section#latest-posts .post-item {
 section#latest-posts .post-title {
   font-size: 1.2rem;
   margin-bottom: 0rem;
+}
+
+/*******************************************/
+/*                ABOUT PAGE               */
+/*******************************************/
+#about-page .about-image__content {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 45vh;
+  width: 100%;
+}
+
+#about-page .about-image__background {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  background-color: #f2f2f2;
+  background-image: url(/img/featue-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  filter: blur(1px);
+}
+#about-page .block-content {
+  z-index: 1;
+}
+#about-page .about-author {
+  text-shadow: 1px 0px 1px;
+  margin-top: 1rem;
 }
