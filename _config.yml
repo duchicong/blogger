@@ -38,7 +38,6 @@ my_resume_name: Resume project
 copyright: 'Website designed by Du Chi Cong'
 
 # Build settings
-# theme: minima
 plugins:
   - jekyll-feed
 
@@ -51,6 +50,15 @@ defaults:
       layout: "post"
       author: "CongDC"
 
+markdown: CommonMark
+# kramdown:
+#   header_offset: 2
+#   auto_ids: true
+#   toc_levels: 1..3
+#   syntax_highlighter: rouge
+#   syntax_highlighter_opts:
+#     line_numbers: table
+#     bold_every: 5
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
