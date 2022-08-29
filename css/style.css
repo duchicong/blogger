@@ -1,5 +1,9 @@
 @import url('./variables.css');
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   background-color: var(--color-gray);
 }
@@ -302,9 +306,6 @@ section#latest-posts .post-title {
 /*******************************************/
 /*             CATEGORY PAGE               */
 /*******************************************/
-/* .category-layout .category-banner-dsa {
-  background-color: #4aa0de;
-} */
 .category-dsa .category-banner {
   background-color: #4aa0de;
 }
@@ -331,4 +332,47 @@ section#latest-posts .post-title {
 .category-layout .info-date {
   font-size: .8rem;
   text-decoration: underline;
+}
+
+/*******************************************/
+/*               POST PAGE                 */
+/*******************************************/
+#post {
+  padding: 1rem 0;
+}
+#post .table-of-content, #post .sidebar-left {
+  display: block;
+  position: sticky;
+  top: 0;
+}
+.table-of-content {
+  border: 1px solid var(--color-gainsboro);
+  box-shadow: 1px 1px 1px 1px #00000014;
+}
+.table-of-content .table-of-content__title {
+  background-color: var(--color-gainsboro);
+}
+.table-of-content .sidenav {
+  margin-bottom: 0rem;
+}
+.table-of-content li.sidenav__item a,
+.table-of-content li.sidenav__item.current a {
+  color: var(--color-gray);
+}
+.table-of-content li.sidenav__item.current a {
+  text-decoration: underline;
+}
+.table-of-content li.sidenav__item.active a {
+  font-weight: 600;
+}
+#post .bg-post__content {
+  box-shadow: 0px 0px 2px 2px #0000003d;
+}
+#post #content img {
+  width: 100%;
+  height: auto;
+}
+#post #content h1.title {
+  font-size: 2rem;
+  font-weight: 600;
 }
