@@ -11,7 +11,7 @@ html {
 }
 
 .body {
-  background-color: var(--color-gray);
+  background-color: var(--color-cherry-pie);
 }
 
 .bg-white {
@@ -28,6 +28,25 @@ html {
 
 .bg-ts {
   background-color: #007acc7a;
+}
+
+.bg-cherry-pie, .btn-cherry-pie {
+  background-color: var(--color-cherry-pie);
+}
+
+.btn-cherry-pie, .btn-cherry-pie:hover, .btn-cherry-pie:active, .btn-cherry-pie:focus {
+  color: var(--color-golden);
+}
+
+.btn-cherry-pie:hover {
+  opacity: .9;
+}
+
+.btn-texas-rose {
+  border-color: var(--color-texas-rose) !important;
+}
+.btn-texas-rose:hover, .btn-texas-rose:active, .btn-texas-rose:focus {
+  background-color: var(--color-texas-rose) !important;
 }
 
 .row-gap-1 {
@@ -65,11 +84,12 @@ html {
 }
 
 header.header {
-  background-color: var(--color-charleston);
+  background-color: var(--color-cherry-pie);
+  border-bottom: 2px solid var(--color-texas-rose);
 }
 
 header .navbar-light .navbar-nav .nav-link {
-  color: var(--color-yellow);
+  color: var(--color-texas-rose);
   border: 1px solid transparent;
   padding: 0.3rem 1rem;
 }
@@ -83,19 +103,20 @@ header .nav-item.dropdown:hover .dropdown-menu {
   min-width: 18rem;
   padding: 0px 2px;
   width: fit-content;
+  top: calc(100% - 2px);
 }
 
 .dropdown-menu a.nav-item-link {
   border-top: 1px solid var(--color-anti-flash-white);
-  color: var(--color-charleston);
+  color: var(--color-cherry-pie);
   display: block;
   padding: .5rem 1rem;
 }
 
 .dropdown-menu a.nav-item-link:hover,
 .dropdown-menu a.nav-item-link.active {
-  background-color: var(--color-charleston);
-  color: var(--color-yellow);
+  background-color: var(--color-cherry-pie);
+  color: var(--color-texas-rose);
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -112,7 +133,7 @@ header .nav-item.dropdown:hover .dropdown-menu {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
   color: var(--color-white);
-  border-color: var(--color-yellow);;
+  border-color: var(--color-texas-rose);;
   border-radius: 10px;
 }
 .navbar-light #nav-btn-search {
@@ -139,10 +160,11 @@ header .navbar-nav {
 /*                  FOOTER                 */
 /*******************************************/
 footer .footer-content {
-  background-color: var(--color-charleston);
+  background-color: var(--color-cherry-pie);
   opacity: .95;
   color: var(--color-white);
-  padding: 2rem 0px 1rem;
+  padding: 1rem 0px 0rem;
+  border-top: 2px solid var(--color-texas-rose);
 }
 footer .footer-cover__image {
   float: left;
@@ -193,7 +215,7 @@ footer .fa-bg-envelope {
 }
 
 footer #copyright {
-  background-color: var(--color-charleston);
+  background-color: var(--color-cherry-pie);
   color: var(--color-white);
   padding-top: .2rem;
   padding-bottom: .2rem;
@@ -210,7 +232,7 @@ footer #copyright > p {
 #categories-block .background-dark {
   display: block;
   box-sizing: border-box;
-  background-color: var(--color-gray);
+  background-color: var(--color-cherry-pie);
 }
 
 #categories-block .categories-content {
@@ -230,7 +252,7 @@ footer #copyright > p {
 
 #categories-block .category-item.border-circle {
   border-radius: 50%;
-  border: 2px solid var(--color-charleston);
+  border: 2px solid var(--color-cherry-pie);
 }
 
 #categories-block .category-item .category-icon {
@@ -372,10 +394,10 @@ section#latest-posts .post-title {
 }
 .table-of-content {
   border: 1px solid var(--color-gainsboro);
-  box-shadow: 1px 1px 1px 1px #00000014;
+  box-shadow: 1px 1px 1px 1px var(--color-cherry-pie-faint);
 }
 .table-of-content .table-of-content__title {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-cherry-pie-faint);
 }
 .table-of-content .sidenav {
   margin-bottom: 0rem;
@@ -391,7 +413,7 @@ section#latest-posts .post-title {
   font-weight: 600;
 }
 #post .bg-post__content {
-  box-shadow: 0px 0px 2px 2px #0000003d;
+  box-shadow: 0px 0px 2px 2px var(--color-cherry-pie-faint);
 }
 #post #content img {
   width: 100%;
@@ -400,6 +422,12 @@ section#latest-posts .post-title {
 #post #content h1.title {
   font-size: 2rem;
   font-weight: 600;
+}
+#post .breadcrumb {
+  background-color: var(--color-cherry-pie-faint);
+}
+#post .breadcrumb a {
+  color: var(--color-black);
 }
 
 /*******************************************/
@@ -463,7 +491,7 @@ section#latest-posts .post-title {
  
 /* Handle */
 .scrollable::-webkit-scrollbar-thumb {
-  background-color: var(--color-rajah);
+  background-color: var(--color-texas-rose);
 }
 
 /* Handle on hover */

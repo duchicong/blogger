@@ -10,8 +10,8 @@ layout: default
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/"><i class="fa fa-home"></i></a></li>
         <li class="breadcrumb-item"><a href="{{ category.permalink }}">{{ category.name }}</a></li>
-        <li class="breadcrumb-item active" aria-current="page">
-          <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+        <li class="breadcrumb-item active">
+          {{ page.title }}
         </li>
       </ol>
     </nav>
@@ -37,7 +37,7 @@ layout: default
         </div>
       </div>
       <!-- Blog Post Content Column -->
-      <div class="col-12 col-sm-8 col-lg-6 p-0">
+      <div class="col-12 col-sm-8 col-md-6 p-0">
         <div class="bg-post__content p-2 mb-2">
           <div id="content">
             <!-- Blog Post -->
