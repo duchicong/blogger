@@ -1,0 +1,17 @@
+---
+layoutL: default
+---
+
+[
+  {% for post in site.posts %}
+    {
+
+      "title"    : "{{ post.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "categories" : "{{ post.categories }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "date"     : "{{ post.date }}",
+      "lead"     : "{{ post.lead }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

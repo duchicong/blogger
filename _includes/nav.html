@@ -3,32 +3,35 @@
   <a class="navbar-brand" href="/">
     <img src="{{ site.data.self.img-small }}" alt="{{ site.title }}" class="cover-image-tiny image-circle">
   </a>
-  <button class="navbar-toggler btn btn-outline-warning" type="button" onclick="toggleNavbarHeader()">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarToggler">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item {% if page.url == '/' %}active{% endif %}"><a class="nav-link"
-          href="/">Home</a></li>
-      <li class="nav-item {% if page.url == '/about-me.html' %}active{% endif %}"><a class="nav-link"
-        href="about-me.html">About me</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" onclick="javascript:void(0);">
-          Categories
+  <ul class="navbar-nav mr-auto d-none d-sm-flex">
+    <li class="nav-item {% if page.url == '/' %}active{% endif %}"><a class="nav-link"
+        href="/">Home</a></li>
+    <li class="nav-item {% if page.url == '/about-me.html' %}active{% endif %}"><a class="nav-link"
+      href="about-me.html">About me</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" onclick="javascript:void(0);">
+        Categories
+      </a>
+      <div class="dropdown-menu">
+        {% for category in site.data.categories %}
+        <a href="{{ category.url }}" alt="{{ category.title }}" class="nav-item-link {% if page.url == category.url %}active{% endif %}">
+          {{ category.title }}
         </a>
-        <div class="dropdown-menu">
-          {% for category in site.data.categories %}
-          <a href="{{ category.url }}" alt="{{ category.title }}" class="nav-item-link {% if page.url == category.url %}active{% endif %}">
-            {{ category.title }}
-          </a>
-          {% endfor %}
-        </div>
-      </li>
-    </ul>
+        {% endfor %}
+      </div>
+    </li>
+  </ul>
+  <div class="d-flex">
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+      <button id="nav-btn-search">
+        <i class="fa fa-search"></i>
+      </button>
     </form>
+    &nbsp;&nbsp;&nbsp;
+    <button class="navbar-toggler btn btn-outline-warning" type="button" onclick="toggleNavbarHeader()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
+  {% include navbar-mobile.html %}
 </nav>

@@ -10,6 +10,9 @@
   --color-black: #000;
   --color-gray: #333;
 
+  --color-rajah : rgb(249, 174, 86);
+  --color-cherry-pie : rgb(53, 51, 82);
+
   /* breakpoint */
   /* Extra small devices (portrait phones, less than 576px) */
   /* No media query since this is the default in Bootstrap */
