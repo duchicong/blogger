@@ -1,0 +1,20 @@
+<div id="navbarToggler">
+  <ul class="navbar-nav-child">
+    <li class="nav-item {% if page.url == '/' %}active{% endif %}"><a class="nav-link text-warning"
+        href="/">Home</a></li>
+    <li class="nav-item {% if page.url == '/about-me.html' %}active{% endif %}"><a class="nav-link text-warning"
+      href="about-me.html">About me</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-warning" onclick="javascript:void(0);">
+        Categories
+      </a>
+      <div class="dropdown-menu">
+        {% for category in site.data.categories %}
+        <a href="{{ category.url }}" alt="{{ category.title }}" class="nav-item-link {% if page.url == category.url %}active{% endif %}">
+          {{ category.title }}
+        </a>
+        {% endfor %}
+      </div>
+    </li>
+  </ul>
+</div>

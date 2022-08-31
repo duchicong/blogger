@@ -40,6 +40,7 @@ copyright: 'Website designed by Du Chi Cong'
 # Build settings
 plugins:
   - jekyll-feed
+  - generate-json
 
 defaults:
   -

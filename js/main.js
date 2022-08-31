@@ -3,9 +3,10 @@ function toggleNavbarHeader() {
 	el.classList.toggle('show');
 };
 
-window.addEventListener('DOMContentLoaded', function (event) {
+window.addEventListener('DOMContentLoaded', function () {
 	//Get all headings only from the actual contents.
 	var contentContainer = document.getElementById('content'); // Add this div to the html
+	if (!contentContainer) return;
 	var headings = contentContainer.querySelectorAll('h1,h2,h3,h4'); // You can do as many or as few headings as you need.
 
 	var tocContainer = document.getElementById('toc'); // Add this div to the HTML
@@ -76,3 +77,87 @@ window.addEventListener('DOMContentLoaded', function (event) {
 	}
 
 });
+
+function searchHandler() {
+	const elBtn = document.getElementById('nav-btn-search');
+	elBtn.onclick = function (e) {
+		e.preventDefault();
+		const searchPage = document.getElementById('search-page');
+		searchPage.classList.add('show');
+		const searchInputEl = document.getElementById('input-search-page');
+		searchInputEl.focus();
+		document.body.style.overflow = 'hidden';
+	}
+}
+
+function closeHandler() {
+	const btnClose = document.querySelector('button.button-close');
+	btnClose.onclick = function (e) {
+		e.preventDefault();
+		const searchPage = document.getElementById('search-page');
+		searchPage.removeAttribute('class');
+		document.body.removeAttribute('style');
+	}
+}
+
+async function fetchData() {
+	const response = await fetch("api-posts.json");
+	const json = await response.json();
+	return json;
+}
+
+function searchPostsHandler() {
+	let posts = [];
+	fetchData()
+		.then(data => posts = data);
+	const inputSearchEl = document.getElementById('input-search-page');
+	const searchContent = document.getElementById('search-posts');
+
+	inputSearchEl.onchange = function (e) {
+		if (searchContent.childNodes.length) {
+			searchContent.innerHTML = '';
+		}
+		const { value } = e.target;
+		const thePosts = posts.filter(post => post.title.includes(value) || post.categories.includes(value) || post.tags.includes(value));
+
+		if (thePosts.length === 0) {
+			const p = document.createElement('p');
+			p.innerHTML = "Không có kết quả nào được tìm thấy!"
+			searchContent.appendChild(p);
+		} else {
+			thePosts.forEach(post => {
+				// wrapper div content of post
+				var div = document.createElement('div');
+				div.setAttribute('class', 'post mb-2');
+	
+				// wrapper title of post
+				var h3 = document.createElement('h3');
+	
+				// wrapper link
+				var a = document.createElement('a');
+				a.setAttribute('class', 'text-warning');
+				a.setAttribute('title', post.title);
+				a.setAttribute("href", post.url);
+				a.innerHTML = post.title;
+	
+				// create typography wrapper text
+				var p = document.createElement('p');
+				p.innerHTML = post.lead;
+	
+				// append child node
+				h3.appendChild(a);
+				div.appendChild(h3);
+				div.appendChild(p);
+	
+				// append child to parent content search
+				searchContent.appendChild(div);
+			})
+		}
+	}
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+	searchHandler();
+	closeHandler();
+	searchPostsHandler();
+})
