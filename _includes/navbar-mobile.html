@@ -8,7 +8,7 @@
       <a class="nav-link dropdown-toggle text-warning" onclick="javascript:void(0);">
         Categories
       </a>
-      <div class="dropdown-menu">
+      <div class="sub-menu">
         {% for category in site.data.categories %}
         <a href="{{ category.url }}" alt="{{ category.title }}" class="nav-item-link {% if page.url == category.url %}active{% endif %}">
           {{ category.title }}
