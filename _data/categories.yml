@@ -1,34 +1,36 @@
 - title: Amazon Web Services
+  alias: aws
   url: /aws.html
   src: 'img/icons/aws.svg'
-  class: 'bg-white'
+  class: 'bg-white radius p-1'
 
 - title: Regex
   url: /regex.html
   src: 'img/icons/regex.svg'
-  class: 'bg-white'
+  class: 'bg-white radius p-1'
 
 - title: CSS
   url: /css.html
   src: 'img/icons/css.svg'
-  class: 'bg-blue'
+  class: ''
 
 - title: JavaScript
   url: /javascript.html
   src: 'img/icons/javascript.svg'
-  class: 'bg-golden'
+  class: 'bg-golden radius'
 
 - title: TypeScript
   url: /typescript.html
   src: 'img/icons/typescript.svg'
-  class: 'bg-ts'
+  class: 'radius'
 
 - title: Data Structure and Algorithms
+  alias: DSA
   url: /dsa.html
   src: 'img/icons/data-structure.svg'
-  class: 'bg-white'
+  class: 'bg-white radius p-1'
 
 - title: Jekyll
   url: /jekyll.html
   src: 'img/icons/jekyll.svg'
-  class: 'bg-white'
+  class: ''
