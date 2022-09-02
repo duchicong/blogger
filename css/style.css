@@ -39,7 +39,7 @@ html {
 }
 
 .btn-cherry-pie, .btn-cherry-pie:hover, .btn-cherry-pie:active, .btn-cherry-pie:focus {
-  color: var(--color-golden);
+  color: var(--color-white);
 }
 
 .btn-cherry-pie:hover {
@@ -51,6 +51,16 @@ html {
 }
 .btn-texas-rose:hover, .btn-texas-rose:active, .btn-texas-rose:focus {
   background-color: var(--color-texas-rose) !important;
+}
+.text-texas-rose,
+.text-texas-rose:hover,
+.text-texas-rose:active,
+.text-texas-rose:focus {
+  color: var(--color-texas-rose);
+}
+.text-texas-rose:hover,
+.text-texas-rose:active {
+  text-decoration: underline;
 }
 
 .row-gap-1 {
@@ -93,7 +103,7 @@ html {
 
 header.header {
   background-color: var(--color-cherry-pie);
-  border-bottom: 2px solid var(--color-texas-rose);
+  border-bottom: 1px solid var(--color-texas-rose);
 }
 
 header .navbar-light .navbar-nav .nav-link {
@@ -263,7 +273,7 @@ footer #copyright > p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 57px);
+  height: auto;
 }
 #categories-block .categories-content {
   position: relative;
@@ -332,6 +342,7 @@ section#description-to-me .section-person__image {
 }
 
 section#description-to-me .section-content {
+  color: var(--color-cherry-pie);
   text-align: center;
 }
 
