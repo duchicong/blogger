@@ -12,3 +12,5 @@ Every create new post then run command line:
 - Bootstrap v4: https://getbootstrap.com/docs/4.0/getting-started/introduction/
 
 - Font Awesome v4: https://fontawesome.com/v4/
+
+- Default theme: minimar

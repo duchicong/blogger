@@ -1,6 +1,6 @@
-@import url('./variables.css');
-@import url('./hightlight-syntax.css');
-@import url('./base.css');
+@import './variables.css';
+@import './hightlight-syntax.css';
+@import './base.css';
 
 * {
   word-break: break-word;

@@ -17,7 +17,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
+# port: 4040
 title: My Notebook
 email: duconggpdg@gmail.com
 author: Du Chi Cong
@@ -37,6 +37,7 @@ my_resume_name: Resume project
 # Add a copyright. A copyright symbol and yar will be added automatically
 copyright: 'Website designed by Du Chi Cong'
 
+theme: minima
 # Build settings
 plugins:
   - jekyll-feed
