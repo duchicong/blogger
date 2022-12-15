@@ -26,6 +26,13 @@ typescript:
   excerpt: "TypeScript là một ngôn ngữ lập trình được phát triển và duy trì bởi Microsoft.
   Nó là một tập hợp siêu cú pháp nghiêm ngặt của JavaScript và thêm tính năng kiểu tĩnh tùy chọn vào ngôn ngữ…"
 
+reactjs:
+  name: reactjs
+  # banner: /img/banners/reactjs.png
+  title: ReactJS
+  permalink: /reactjs.html
+  excerpt: "Reactjs là 1 thư viện của JavaScript để xây dựng giao diện người dùng"
+
 css:
   name: regex
   title: Cascading Style Sheets

@@ -1,5 +1,5 @@
 - title: Amazon Web Services
-  alias: aws
+  alias: AWS
   url: /aws.html
   src: 'img/icons/aws.svg'
   class: 'bg-white radius p-1'
@@ -23,6 +23,11 @@
   url: /typescript.html
   src: 'img/icons/typescript.svg'
   class: 'radius'
+
+- title: ReactJS
+  url: /reactjs.html
+  src: 'img/icons/reactjs.svg'
+  class: 'bg-dark-react'
 
 - title: Data Structure and Algorithms
   alias: DSA

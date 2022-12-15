@@ -26,6 +26,10 @@ html {
   background-color: var(--color-blue);
 }
 
+.bg-dark-react {
+  background-color: var(--color-dark-react);
+}
+
 .bg-ts {
   background-color: #007acc7a;
 }
