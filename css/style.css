@@ -92,6 +92,12 @@ html {
   border-radius: .2rem;
 }
 
+.page-default {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .post-category, .post-date {
   border-radius: 0.3rem;
   background-color: rgba(0,0,0,0.2);
@@ -409,6 +415,9 @@ section#latest-posts .post-title {
 .category-dsa .category-banner {
   background-color: #4aa0de;
 }
+.category-layout {
+  flex: 1;
+}
 .category-layout .category-banner-top {
   max-height: 16rem;
   width: 100%;
@@ -516,6 +525,7 @@ section#latest-posts .post-title {
 #search-page .input-group-search {
   max-width: 30rem;
   margin: 2rem auto 0;
+  justify-content: center;
 }
 #search-page button.button-close i.fa-times{
   font-size: 1.5rem;
@@ -523,6 +533,21 @@ section#latest-posts .post-title {
 #search-page .scrollable {
   overflow-y: auto;
   height: calc(100vh - 80px);
+}
+#input-search-page {
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid var(--color-white);
+}
+#input-search-page:focus:placeholder-shown {
+  border: 1px solid var(--color-blue);
+  outline: 0;
+  box-shadow: 1px 1px 1px rgb(33 150 243 / 30%);
+}
+#input-search-page:focus:not(:placeholder-shown),
+#input-search-page:not(:placeholder-shown) {
+  border: 1px solid var(--color-golden);
+  outline: 0;
 }
 /* width */
 .scrollable::-webkit-scrollbar {
