@@ -27,7 +27,7 @@
 - title: ReactJS
   url: /reactjs.html
   src: 'img/icons/reactjs.svg'
-  class: 'bg-dark-react'
+  class: 'bg-dark-react radius'
 
 - title: Data Structure and Algorithms
   alias: DSA
